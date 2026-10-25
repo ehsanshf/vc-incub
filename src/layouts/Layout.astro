@@ -1,4 +1,4 @@
-﻿---
+---
 import { site } from '../config';
 import '../styles/global.css';
 interface Props { title?: string; description?: string }
@@ -15,7 +15,7 @@ const canonical = site.domain ? new URL(Astro.url.pathname, site.domain).href : 
 <meta property="og:title" content={title} /><meta property="og:description" content={description} /><meta property="og:type" content="website" /><meta property="og:locale" content="en_CA" /><meta property="og:site_name" content={site.name} />
 <meta property="og:image" content={site.domain ? `${site.domain}/social-card.png` : '/social-card.png'} />
 {canonical && <meta property="og:url" content={canonical} />}<meta name="twitter:card" content="summary_large_image" />
-<meta name="theme-color" content="#173e3b" />
+<meta name="theme-color" content="#101f39" />
 {!site.domain && <meta name="robots" content="noindex, nofollow" />}
 </head>
 <body>

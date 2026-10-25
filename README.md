@@ -40,3 +40,7 @@ To connect your domain, add the domain in the chosen host's domain settings, the
 - Test all three email paths in a configured mail application and confirm the destination inbox receives enquiries you choose to send.
 
 The inaugural program status can remain as written; no launch date is required. Contact and production-domain values are deliberately unavailable rather than invented.
+
+## Visual direction
+
+The site uses deep navy, white, and restrained blue accents, with locally served Instrument Serif headlines and DM Sans body copy. The revised editorial hierarchy was informed by the public Sequoia Capital (https://sequoiacap.com/) and Index Ventures (https://www.indexventures.com/) websites. These are design references only; there is no affiliation. Theme tokens are at the top of `src/styles/global.css`. The favicon and sharing image follow the same navy palette.
