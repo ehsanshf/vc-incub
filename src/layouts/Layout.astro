@@ -21,12 +21,12 @@ const canonical = site.domain ? new URL(Astro.url.pathname, site.domain).href : 
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="header"><div class="container header-inner">
-<a href="/" class="brand" aria-label="FoundNexa home"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M3 27V5h10v10h10v12H3Z" fill="currentColor"/><path d="M18 5h11v11H18z" fill="currentColor" opacity=".45"/></svg><span>Found<span class="brand-light">Nexa</span><span class="brand-dot">.</span></span></a>
+<a href="/" class="brand" aria-label="FoundNexa home"><img src="/brand/foundnexa-mark.svg" width="38" height="38" alt="" class="brand-mark" /><span>Found<span class="brand-light">Nexa</span><span class="brand-dot">.</span></span></a>
 <nav aria-label="Main navigation" class="desktop-nav">{site.navigation.map(([label, id]) => <a href={`/#${id}`}>{label}</a>)}</nav>
 <details class="mobile-nav"><summary>Menu <span aria-hidden="true">☰</span></summary><nav aria-label="Mobile navigation">{site.navigation.map(([label, id]) => <a href={`/#${id}`}>{label}</a>)}</nav></details>
 </div></header>
 <slot />
-<footer><div class="container footer-top"><a href="/" class="brand">FoundNexa<span class="brand-dot">.</span></a><p>Good questions. Clear milestones.<br />Meaningful businesses.</p><div><span class="eyebrow">Based in Canada</span><p>{site.location}</p></div></div><div class="container footer-bottom"><span>© {new Date().getFullYear()} {site.name}. All rights reserved.</span><nav aria-label="Footer navigation"><a href="/#about">About</a><a href="/#program">Program</a><a href="/#contact">Contact</a><a href="/privacy/">Privacy</a></nav></div></footer>
+<footer><div class="container footer-top"><a href="/" class="brand"><img src="/brand/foundnexa-mark.svg" width="38" height="38" alt="" class="brand-mark" />FoundNexa<span class="brand-dot">.</span></a><p>Good questions. Clear milestones.<br />Meaningful businesses.</p><div><span class="eyebrow">Based in Canada</span><p>{site.location}</p></div></div><div class="container footer-bottom"><span>© {new Date().getFullYear()} {site.name}. All rights reserved.</span><nav aria-label="Footer navigation"><a href="/#about">About</a><a href="/#program">Program</a><a href="/#contact">Contact</a><a href="/privacy/">Privacy</a></nav></div></footer>
 <script>
  document.querySelectorAll('.mobile-nav a').forEach(link => link.addEventListener('click', () => document.querySelector('.mobile-nav')?.removeAttribute('open')));
 </script>

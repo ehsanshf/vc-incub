@@ -20,7 +20,7 @@ The production output is `dist/`. Preview and development default to `http://127
 
 `src/config.ts` is the central source for the business name, email, production domain, program status, navigation, stages, services, measurement priorities, and FAQs. Editorial page copy is in `src/pages/index.astro`; privacy text is in `src/pages/privacy.astro`. The shared layout is `src/layouts/Layout.astro`, and visual styles are in `src/styles/global.css`.
 
-The domain and email are intentionally empty. Contact buttons are disabled with visible explanations until `site.email` contains a real monitored address. Once configured, each action opens the visitor's email application with a distinct founder, development, or partnership subject; no email is sent automatically. Previewing these links does not send mail.
+The public contact email is configured as `info@foundnexa.com`; the production domain is still intentionally empty. Each contact action opens the visitor's email application with a distinct founder, development, or partnership subject; no email is sent automatically. Previewing these links does not send mail.
 
 Set `site.domain` to the verified HTTPS production origin without a trailing slash. Canonical URLs, Open Graph absolute URLs, robots, and the two-page sitemap derive from that value at build time. Without a domain, pages have `noindex, nofollow`, robots disallows crawling, and the sitemap has no URLs. Rebuild after configuration changes. The social image is `public/social-card.png`, and the favicon is `public/favicon.svg`.
 
@@ -32,15 +32,18 @@ To connect your domain, add the domain in the chosen host's domain settings, the
 
 ## Required before public launch
 
-- Supply the real monitored public contact email in `src/config.ts`.
+- Confirm that the configured public inbox `info@foundnexa.com` is monitored and can receive mail.
 - Supply the actual production HTTPS domain in `src/config.ts`.
 - Choose and configure a static host, domain DNS, and HTTPS. No provider is currently selected by this project.
 - Confirm the public program status and all program/services copy. No confirmed launch date, team, partnerships, fixed equity percentages, or historical results are claimed.
 - Update the privacy page for the selected hosting and email providers and their actual processing/logging practices. Do not add an unverified retention or compliance promise.
 - Test all three email paths in a configured mail application and confirm the destination inbox receives enquiries you choose to send.
 
-The inaugural program status can remain as written; no launch date is required. Contact and production-domain values are deliberately unavailable rather than invented.
+The inaugural program status can remain as written; no launch date is required. The production-domain value remains deliberately empty until confirmed.
 
 ## Visual direction
 
 The site uses deep navy, white, and restrained blue accents, with locally served Instrument Serif headlines and DM Sans body copy. The revised editorial hierarchy was informed by the public Sequoia Capital (https://sequoiacap.com/) and Index Ventures (https://www.indexventures.com/) websites. These are design references only; there is no affiliation. Theme tokens are at the top of `src/styles/global.css`. The favicon and sharing image follow the same navy palette.
+
+
+The polished brand mark is `public/brand/foundnexa-mark.svg`, shared by the website header and footer. `public/brand/foundnexa-instagram.png` is the 1080 px profile image, with an editable SVG alongside it. The mark keeps its original geometric silhouette with subtle blue/silver shading.

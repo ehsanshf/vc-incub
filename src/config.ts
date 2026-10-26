@@ -1,6 +1,6 @@
 ﻿export const site = {
   name: 'FoundNexa',
-  email: '', // Supply a monitored public contact email before launch.
+  email: 'info@foundnexa.com', // Public contact address.
   domain: '', // Full production origin, e.g. https://your-verified-domain.ca (no trailing slash).
   status: 'Preparing our inaugural program',
   location: 'Greater Toronto Area, Ontario, Canada',
@@ -28,7 +28,7 @@
   ],
   faqs: [
     ['Who is the program intended for?', 'Early-stage Canadian founders building B2B software, SaaS, AI-enabled ventures, or technology services. We look for relevant domain knowledge, a clear customer problem, commitment, customer evidence, technical feasibility, and program fit. Existing revenue is not a requirement.'],
-    ['Can I express interest before launch?', 'Yes. We are preparing our inaugural program. Once our contact channel is available, founders can express interest in future participation. Expressing interest does not constitute admission, and a launch date has not been confirmed.'],
+    ['Can I express interest before launch?', 'Yes. We are preparing our inaugural program. Use Express Interest to tell us about your venture and interest in future participation. Expressing interest does not constitute admission, and a launch date has not been confirmed.'],
     ['How long is the program?', 'The planned program runs for 12 weeks, with structured milestones from initial diagnosis through customer validation, execution, and next-stage planning.'],
     ['Does participation involve equity?', 'Participation may involve negotiated minority equity. The scope of support and all terms will be documented in a separate agreement and disclosed before a founder joins. No fixed equity percentage is published.'],
     ['Must participants purchase software services?', 'No. Software services are optional and separately priced and contracted. Participants can decline them without losing program support and are free to use other providers.'],

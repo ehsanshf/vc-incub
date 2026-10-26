@@ -32,7 +32,7 @@ em { font-weight: 400; }
 .header { background: var(--ink); color: white; }
 .header-inner { min-height: 104px; display: flex; align-items: center; justify-content: space-between; gap: 30px; border-bottom: 1px solid #ffffff26; }
 .brand { display: inline-flex; align-items: center; font: 600 28px/1 var(--sans); letter-spacing: -1.2px; white-space: nowrap; }
-.brand svg { width: 29px; margin-right: 12px; color: #9db8ef; }
+.brand-mark { width: 38px; height: 38px; margin-right: 10px; flex-shrink: 0; }
 .brand-light { font-weight: 400; }
 .brand-dot { color: #9db8ef; }
 .desktop-nav { display: flex; align-items: center; gap: 30px; font-size: 13px; }
@@ -173,7 +173,7 @@ footer { padding-block: 55px 25px; }
   .container { width: calc(100% - 40px); }
   .header-inner { min-height: 82px; }
   .brand { font-size: 25px; }
-  .brand svg { width: 25px; }
+  .brand-mark { width: 34px; height: 34px; }
   .desktop-nav { display: none; }
   .mobile-nav { display: block; position: relative; z-index: 10; }
   .mobile-nav>summary { display: flex; gap: 12px; align-items: center; font-size: 13px; padding: 10px 0 10px 10px; }

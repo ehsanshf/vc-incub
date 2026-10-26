@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080" role="img" aria-label="FoundNexa logo"><defs><radialGradient id="backdrop" cx=".32" cy=".2" r=".95"><stop stop-color="#243e67"/><stop offset=".5" stop-color="#101f39"/><stop offset="1" stop-color="#081225"/></radialGradient><linearGradient id="rim" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#93bbff" stop-opacity=".3"/><stop offset=".5" stop-color="#93bbff" stop-opacity=".05"/><stop offset="1" stop-color="#93bbff" stop-opacity=".18"/></linearGradient></defs><rect width="1080" height="1080" fill="url(#backdrop)"/><circle cx="540" cy="540" r="451" fill="none" stroke="url(#rim)" stroke-width="1.5"/><g transform="translate(156 156) scale(6)"><defs>
+  <linearGradient id="silver" x1="12" y1="12" x2="91" y2="115" gradientUnits="userSpaceOnUse"><stop stop-color="#ffffff"/><stop offset=".48" stop-color="#ecf3ff"/><stop offset="1" stop-color="#afc5e9"/></linearGradient>
+  <linearGradient id="blue" x1="68" y1="12" x2="116" y2="60" gradientUnits="userSpaceOnUse"><stop stop-color="#d7e9ff"/><stop offset=".35" stop-color="#91baff"/><stop offset="1" stop-color="#4877d8"/></linearGradient>
+  <linearGradient id="edge" x1="20" y1="10" x2="97" y2="110" gradientUnits="userSpaceOnUse"><stop stop-color="#ffffff" stop-opacity=".95"/><stop offset="1" stop-color="#ffffff" stop-opacity=".1"/></linearGradient>
+  <filter id="shadow" x="-30%" y="-30%" width="170%" height="180%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#020a1c" flood-opacity=".28"/></filter>
+</defs><g filter="url(#shadow)">
+  <path d="M18 12h28a6 6 0 0 1 6 6v42h34a6 6 0 0 1 6 6v36a6 6 0 0 1-6 6H18a6 6 0 0 1-6-6V18a6 6 0 0 1 6-6Z" fill="url(#silver)" stroke="url(#edge)" stroke-width=".8"/>
+  <rect x="68" y="12" width="48" height="48" rx="6" fill="url(#blue)" stroke="url(#edge)" stroke-width=".8"/>
+  <path d="M75 13h34a6 6 0 0 1 6 6" stroke="#fff" stroke-opacity=".62" stroke-width=".65" fill="none"/>
+  <path d="M19 13h26M13 20v80" stroke="#fff" stroke-opacity=".65" stroke-width=".65" stroke-linecap="round"/>
+</g></g></svg>
