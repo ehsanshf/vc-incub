@@ -4,4 +4,4 @@ interface Props { label: string; subject: string; secondary?: boolean; }
 const { label, subject, secondary = false } = Astro.props;
 const href = contactHref(subject);
 ---
-{href ? <a class:list={['button', { secondary }]} href={href}>{label}<span aria-hidden="true">↗</span></a> : <button class:list={['button', { secondary }]} type="button" disabled title="Contact details are being finalized.">{label}<span aria-hidden="true">↗</span></button>}
+{href ? <a class:list={['button', { secondary }]} href={`/contact/?subject=${encodeURIComponent(subject)}`}>{label}<span aria-hidden="true">↗</span></a> : <button class:list={['button', { secondary }]} type="button" disabled title="Contact details are being finalized.">{label}<span aria-hidden="true">↗</span></button>}

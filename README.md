@@ -20,15 +20,15 @@ The production output is `dist/`. Preview and development default to `http://127
 
 `src/config.ts` is the central source for the business name, email, production domain, program status, navigation, stages, services, measurement priorities, and FAQs. Editorial page copy is in `src/pages/index.astro`; privacy text is in `src/pages/privacy.astro`. The shared layout is `src/layouts/Layout.astro`, and visual styles are in `src/styles/global.css`.
 
-The public contact email is configured as `info@foundnexa.com`; the production domain is still intentionally empty. Each contact action opens the visitor's email application with a distinct founder, development, or partnership subject; no email is sent automatically. Previewing these links does not send mail.
+The public contact email is configured as `info@foundnexa.com`; the production domain is still intentionally empty. Each enquiry button opens `/contact/` with its founder, development, or partnership subject. The contact page always shows the email address, offers a copy action, and includes an explicit link to open an email application. No email is sent automatically. Previewing these links does not send mail.
 
-Set `site.domain` to the verified HTTPS production origin without a trailing slash. Canonical URLs, Open Graph absolute URLs, robots, and the two-page sitemap derive from that value at build time. Without a domain, pages have `noindex, nofollow`, robots disallows crawling, and the sitemap has no URLs. Rebuild after configuration changes. The social image is `public/social-card.png`, and the favicon is `public/favicon.svg`.
+Set `site.domain` to the verified HTTPS production origin without a trailing slash. Canonical URLs, Open Graph absolute URLs, robots, and the sitemap derive from that value at build time. Without a domain, pages have `noindex, nofollow`, robots disallows crawling, and the sitemap has no URLs. Rebuild after configuration changes. The social image is `public/social-card.png`, and the favicon is `public/favicon.svg`.
 
 ## Deployment and custom domain
 
 This is host-independent static output. For Vercel, Netlify, Cloudflare Pages, or another static host, import the repository, choose Astro/static output, set build command `npm run build`, output directory `dist`, and a supported Node 22.19+ or 24 LTS runtime. Use `npm ci` for installation. No server adapter or runtime secrets are needed. Alternatively upload the contents of `dist/` to a static web host.
 
-To connect your domain, add the domain in the chosen host's domain settings, then copy its required DNS records to your registrar. Wait for verification, enable the host's managed HTTPS certificate, and select the canonical hostname (redirect any alternate hostname to it). Use that exact HTTPS origin in `site.domain` and rebuild. Follow the selected host's displayed DNS values; do not guess records. Verify HTTPS, both pages, anchors, email subjects, `/robots.txt`, `/sitemap.xml`, favicon, and social previews after deployment. Do not publish until the configuration and privacy text below are complete.
+To connect your domain, add the domain in the chosen host's domain settings, then copy its required DNS records to your registrar. Wait for verification, enable the host's managed HTTPS certificate, and select the canonical hostname (redirect any alternate hostname to it). Use that exact HTTPS origin in `site.domain` and rebuild. Follow the selected host's displayed DNS values; do not guess records. Verify HTTPS, all pages, anchors, email subjects, `/robots.txt`, `/sitemap.xml`, favicon, and social previews after deployment. Do not publish until the configuration and privacy text below are complete.
 
 ## Required before public launch
 
